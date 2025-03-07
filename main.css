@@ -1,0 +1,105 @@
+html {
+  font-size: 16px;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+	/* Mellow */
+	--mlw-night: #161617;
+	--mlw-french: #c9c7cd;
+	--mlw-melon: #f5a191;
+	--mlw-cambridge: #90b99f;
+	--mlw-sand: #e6b99d;
+	--mlw-wisteria: #aca1cf;
+	--mlw-plum: #e29eca;
+	--mlw-rose: #ea83a5;
+}
+
+@font-face {
+	font-family: "FiraCode";
+	src: url("fonts/FiraCode-VF.ttf");
+}
+
+body {
+	width: min(90%, 800px);
+	margin: 0 auto;
+	padding: 2rem 0rem;
+	background-color: var(--mlw-night);
+	color: var(--mlw-french);
+	font-family: "FiraCode";
+}
+
+nav {
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1, h2, h3 {
+	font-weight: 500;
+}
+
+h4, h5, h5 {
+	color: var(--mlw-sand);
+}
+
+.subtitle {
+	color: var(--mlw-sand);
+}
+
+.section-title {
+	margin-top: 2rem;
+}
+
+a {
+	color: var(--mlw-rose);
+	text-decoration: none;
+}
+
+a:not(:has(i)):hover {
+	text-decoration: wavy underline;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+#repo-container {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.repo {
+	border: var(--mlw-wisteria) 2px solid;
+	padding: .5rem 1rem;
+	border-radius: 5px;
+}
